@@ -479,7 +479,9 @@ FIG14: PREVIEW OF THE CODE
 ### Function of the code
 
 This code uses an ultrasonic sensor to detect obstacles and avoid them. The Trigger pin sends out a sound wave and the echo pin receive the echo of that sound; it then calculates the amount of time it took and use that to get the distance. When the distance is between the robot and the obstacle is high, it runs the “Forward()” function which was coded to make both motors rotate clock wise, but when the distance is low, the code runs the “Right()” function which was coded to make one motor rotate clock wise and the other one rotate anti clockwise cause the robot to move left or right, and avoid the obstacle.
-RESULT OF THE SYSTEM
+
+**RESULT OF THE SYSTEM**
+
 The result of the system is an intelligent obstacle avoidance robot that can navigate through its environment while avoiding collisions with obstacles. The robot uses an ultrasonic sensor to detect obstacles and measure their distance, and an Arduino microcontroller to process the sensor data and control the robot's movements.
 - The robot can detect obstacles and avoid collisions.
 - The robot can move forward and turn right based on the distance of the obstacles.
