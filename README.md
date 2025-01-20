@@ -12,7 +12,9 @@ BELLS UNIVERSITY OF TECHNOLOGY, OTA (BUT)
 DEPARTMENT OF MECHATRONICS ENGINEERING
 
 JANUARY, 3TH, 2025
-DECLARATION
+
+# DECLARATION
+
 I hereby declare that this is our original work of the project design reflecting the knowledge acquired from research on my level 200 1st semester project about “Design and implementation of obstacle avoidance robot using Arduino UNO R3”, I therefore declare that the information in this report is original and has never been submitted to any other institution, university or college for any award other than Bells University of Technology, Department of Mechatronics Engineering, Ota.
 
 S/N	SURNAME	NAME	MATRIC NUMBER	DEPARTMENT	SIGNATURE
@@ -22,7 +24,9 @@ S/N	SURNAME	NAME	MATRIC NUMBER	DEPARTMENT	SIGNATURE
 4.	ADELEKE	OLUWAFERANMI	2023/12245	MECHATRONICS	
 5.	ADESINA	EMMANUEL	2023/12416	MECHATRONICS	
 THE SIGNATURES HERE ARE FOR THE MEMBERS WHO PARTICIPATED IN THE PROJECT
-APPROVAL
+
+# APPROVAL
+
 I have read and hereby recommended this final year project design entitled “Design and implementation of obstacle avoidance robot using Arduino UNO R3” acceptance of Bells University of Technology in the fulfilment for the requirement of the level 200 1st semester robotics project in Mechatronics Engineering.
 
 …………………………………………..
@@ -30,15 +34,18 @@ Ayuba Muhammad
 Lecturer
 
 
-ACKNOWLEDGEMENT
+# ACKNOWLEDGEMENT
+
 I would like to thank my group members for being co-operative, I would also like to thank Olaniyi Oluwatobiloba who helped in a minor error with the ultrasonic sensor trigger and echo pin while coding the Arduino UNO R3 board.
 
 
-DEDICATION
+# DEDICATION
+
 I dedicate this project to LORD almighty for the strength and knowledge he gave group two to complete this project. I also dedicate this project to myself, Adeniyi Excel. And I also dedicate this project to Trex AI for it’s help in debugging my code.
 
 
-TABLE OF CONTENTS 
+# TABLE OF CONTENTS 
+
 Declaration
 Approval
 Acknowledgement
@@ -87,7 +94,8 @@ REFECENCES
 
 
 
-LIST OF FIGURES
+# LIST OF FIGURES
+
 Fig 1: Ultrasonic Sensor Principle
 Fig 2: Principle of an ultrasonic sensor
 Fig 3: Schematic of the System
@@ -104,13 +112,15 @@ Fig 13: LCD Running Simulation
 Fig 14: Preview of the Code
 
 
-ABSTRACT
+# ABSTRACT
+
 In the current times, automated house hold appliances have become a popular choice for house hold cleaning agents such has a vacuum bot but there have been lots of report about robots accidentally hitting an obstacle thereby damaging the robot and causing the robot’s inability to complete its task. A common household would feel much at ease if the vacuum bots avoid every obstacle in its way and efficiently clean the house. Hence this project is a prototype of an obstacle avoiding system that can be implemented in house hold cleaning robots for minimal cost.
 Index-Terms: Arduino UNO R3, LED, motors, LCD 16x2, ultrasonic sensor, channel driver with diodes.
 
 
-CHAPTER ONE
+# CHAPTER ONE
 INTRODUCTION 
+
 The advent of automated household appliances has revolutionized the way we maintain our homes. Robots like vacuum bots have become increasingly popular, offering unparalleled convenience and efficiency in cleaning tasks. These robots have transformed the cleaning landscape, enabling homeowners to allocate more time to leisure activities and less time to mundane chores. However, their usefulness is often hindered by a significant limitation: the inability to detect and avoid obstacles.
 
 Numerous reports have highlighted the frequency of collisions, resulting in damage to the robot and incomplete cleaning tasks. This not only leads to additional maintenance costs but also compromises the overall cleaning experience. Furthermore, the risk of accidents and injuries posed by these collisions underscores the need for a reliable obstacle avoidance system.
@@ -164,15 +174,16 @@ The study focuses on the design and development of an efficient obstacle avoidan
 Geographical Scope	
 The study is limited to any standard workshop setting, with the prototype being tested in a controlled environment within Nigeria.
 
-         Time Scope
+Time Scope
 The study is theoretical and based on simulation so it is expected to be completed within 1 week, while the physical aspect should be completed in the span of 6 weeks.
 
 
 
 
 
-CHAPTER TWO (LITERATURE REVIEW)
+# CHAPTER TWO (LITERATURE REVIEW)
 INTRODUCTION
+
 The development of efficient obstacle avoidance systems for vacuum cleaning robots has been an active area of research in recent years. With the increasing demand for autonomous cleaning solutions, researchers have explored various technologies and methods to enable robots to navigate and clean effectively in complex environments.
 
 Existing studies have investigated the use of different sensors and algorithms for obstacle detection and avoidance. For instance, Everett and Gage used infrared sensors and artificial neural networks to enable a robot to navigate through cluttered spaces (1995).
@@ -227,7 +238,7 @@ Ultrasonic sensors play a crucial role in enabling vacuum robots and other obsta
 The process begins with the transmission of high-frequency sound waves by the ultrasonic sensor. When these sound waves hit an object, they bounce back and return to the sensor, which detects the reflected sound waves and measures the time difference between when the sound waves were sent and when they were received.
 Using the speed of sound, the sensor calculates the distance of the object from the sensor. This information is then used by the robot to adjust its navigation accordingly, allowing it to avoid collisions and navigate safely.
 In vacuum robots, ultrasonic sensors are particularly useful for detecting obstacles such as furniture, walls, and stairs. By detecting these obstacles and measuring their distance, the robot can adjust its cleaning path and avoid getting stuck or damaged.
-Similarly, ultrasonic sensors are used in other obstacle-avoiding robots, such as autonomous mobile robots, drones, and self-driving cars, to detect and respond to obstacles in their environments. Overall, ultrasonic sensors provide a reliable and efficient means of obstacle detection and avoidance, enabling robots to navigate safely and effectively.
+Similarly, ultrasonic sensors are used in other obstacle-avoiding robots, such as autonomous mobile robots, drones, and self-driving cars, to detect and respond to obstacles in their / environments. Overall, ultrasonic sensors provide a reliable and efficient means of obstacle detection and avoidance, enabling robots to navigate safely and effectively.
 
 
 
@@ -236,8 +247,9 @@ Similarly, ultrasonic sensors are used in other obstacle-avoiding robots, such a
 
 
 
-CHAPTER THREE
+# CHAPTER THREE
 SYSTEM COMPONENTS
+
 The ultrasonic sensors detect obstacles and measure their distance from the robot. The microcontroller processes the sensor data and controls the robot's movements. The vacuum cleaning robot platform provides the base for the robot, while the motor drivers control the speed and direction of the wheels and motors. The wheels and motors enable the robot to move around and navigate through its environment. Together, these components work in harmony to enable the robot to avoid obstacles and clean efficiently.
 FIG3: SCHEMATIC OF THE SYSTEM
 FIG4: COMPONENTS OF THE SYSTEM
@@ -346,8 +358,9 @@ FIG13: LCD RUNNING SIMULATION
 
 
 
-CHAPTER FOUR
+# CHAPTER FOUR
 SYSTEM CODE
+```
 #include <LiquidCrystal.h>
 int trig = 1;
 int echo = 0;
@@ -419,6 +432,7 @@ void loop() {
     delay(150);
   }
 }
+```
 FIG14: PREVIEW OF THE CODE
 
 Function of the code
