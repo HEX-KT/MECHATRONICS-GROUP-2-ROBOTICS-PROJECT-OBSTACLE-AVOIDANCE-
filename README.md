@@ -136,6 +136,7 @@ Index-Terms: Arduino UNO R3, LED, motors, LCD 16x2, ultrasonic sensor, channel d
 
 
 ## CHAPTER ONE
+
 **INTRODUCTION**
 
 The advent of automated household appliances has revolutionized the way we maintain our homes. Robots like vacuum bots have become increasingly popular, offering unparalleled convenience and efficiency in cleaning tasks. These robots have transformed the cleaning landscape, enabling homeowners to allocate more time to leisure activities and less time to mundane chores. However, their usefulness is often hindered by a significant limitation: the inability to detect and avoid obstacles.
@@ -150,6 +151,7 @@ This project seeks to contribute to the growing field of robotics and artificial
 
 
 **BACKGROUND OF THE STUDY**
+
 The increasing demand for automated household appliances has led to the development of various robotic cleaning systems. Among these, vacuum cleaning robots have gained significant popularity due to their ability to efficiently navigate and clean floors. However, despite their advantages, these robots often struggle with obstacle detection and avoidance, resulting in collisions, damage, and incomplete cleaning tasks.
 
 This project aims to develop a more efficient and effective obstacle avoidance system for vacuum cleaning robots. The proposed system utilizes a combination of ultrasonic sensors and Arduino UNO R3 microcontroller to detect and respond to obstacles.
@@ -161,6 +163,7 @@ This project seeks to contribute to the growing field of robotics and artificial
 
 
 **PROBLEM STATEMENT**
+
 Current vacuum cleaning robots employ a combination of infrared sensors and bumper sensors to detect obstacles. The infrared sensors emit infrared light and detect reflections from nearby objects, while the bumper sensors detect physical contact with obstacles. However, these sensors have limitations. Infrared sensors can be affected by environmental factors such as lighting and texture, while bumper sensors only detect obstacles after physical contact has been made.
 
 As a result, current vacuum cleaning robots often rely on pre-programmed navigation patterns and random navigation to avoid obstacles. However, this approach can lead to inefficient cleaning paths, missed spots, and increased risk of collisions.
