@@ -435,7 +435,7 @@ void loop() {
 ```
 FIG14: PREVIEW OF THE CODE
 
-Function of the code
+# Function of the code
 This code uses an ultrasonic sensor to detect obstacles and avoid them. The Trigger pin sends out a sound wave and the echo pin receive the echo of that sound; it then calculates the amount of time it took and use that to get the distance. When the distance is between the robot and the obstacle is high, it runs the “Forward()” function which was coded to make both motors rotate clock wise, but when the distance is low, the code runs the “Right()” function which was coded to make one motor rotate clock wise and the other one rotate anti clockwise cause the robot to move left or right, and avoid the obstacle.
 RESULT OF THE SYSTEM
 The result of the system is an intelligent obstacle avoidance robot that can navigate through its environment while avoiding collisions with obstacles. The robot uses an ultrasonic sensor to detect obstacles and measure their distance, and an Arduino microcontroller to process the sensor data and control the robot's movements.
@@ -447,7 +447,8 @@ The result of the system is an intelligent obstacle avoidance robot that can nav
 
 Overall, the system demonstrates a successful implementation of an obstacle avoidance robot using Arduino and ultrasonic sensors.
 
-CHAPTER FIVE
+# CHAPTER FIVE
+
 CONCLUSION
 An obstacle avoidance robot is a type of robot that is designed to navigate through a cluttered environment without colliding with obstacles. These robots use sensors and algorithms to detect and avoid obstacles in their path.
 
@@ -459,17 +460,11 @@ The robot uses a microcontroller to interpret the data from the ultrasonic senso
 
 The robot uses a DC motor to move forward and avoid obstacles. The motor is controlled by the microcontroller, which sends signals to turn the motor off and on.
 
-RECOMMENDATION
+# RECOMMENDATION
 To enhance the obstacle avoidance robot, add an infrared sensor to complement the existing ultrasonic sensor. This multi-sensor approach will improve accuracy and reliability in detecting obstacles. Modify the code to integrate infrared data and adjust the obstacle detection algorithm accordingly, enabling the robot to navigate more effectively.
 
 
-
-
-
-
-
-
-REFERENCES	
+# REFERENCES	
 1. Borenstein, J. (1991). The Navlab: A Testbed for Research in Autonomous Navigation. Kluwer Academic Publishers.
 2. Brooks, R. A. (1986). A Robust Layered Control System for a Mobile Robot. IEEE Journal of Robotics and Automation, 2(1), 14-23.
 3. Dudek, G., & Jenkin, M. (2010). Computational Principles of Mobile Robotics. Cambridge University Press.
