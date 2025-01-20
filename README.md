@@ -18,12 +18,10 @@ JANUARY, 3TH, 2025
 
 I hereby declare that this is our original work of the project design reflecting the knowledge acquired from research on my level 200 1st semester project about “Design and implementation of obstacle avoidance robot using Arduino UNO R3”, I therefore declare that the information in this report is original and has never been submitted to any other institution, university or college for any award other than Bells University of Technology, Department of Mechatronics Engineering, Ota.
 
-S/N	SURNAME	NAME	MATRIC NUMBER	DEPARTMENT	SIGNATURE
-1.	ADENIYI	EXCEL	2023/12664	MECHATRONICS	
-2.	ADETUNJI	JOSHUA	2023/12683	MECHATRONICS	
-3.	ADEWOLE	MUBARAK	2023/12582	MECHATRONICS	
-4.	ADELEKE	OLUWAFERANMI	2023/12245	MECHATRONICS	
-5.	ADESINA	EMMANUEL	2023/12416	MECHATRONICS	
+BY
+
+ADENIYI	EXCEL	2023/12664	MECHATRONICS	
+   
 THE SIGNATURES HERE ARE FOR THE MEMBERS WHO PARTICIPATED IN THE PROJECT
 
 ## APPROVAL
