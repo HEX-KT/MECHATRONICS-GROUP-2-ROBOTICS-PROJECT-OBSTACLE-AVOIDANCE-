@@ -9,6 +9,7 @@ BY
 MECHATRONICS ROBOTICS GROUP 2
 
 BELLS UNIVERSITY OF TECHNOLOGY, OTA (BUT)
+
 DEPARTMENT OF MECHATRONICS ENGINEERING
 
 JANUARY, 3TH, 2025
@@ -30,7 +31,9 @@ THE SIGNATURES HERE ARE FOR THE MEMBERS WHO PARTICIPATED IN THE PROJECT
 I have read and hereby recommended this final year project design entitled “Design and implementation of obstacle avoidance robot using Arduino UNO R3” acceptance of Bells University of Technology in the fulfilment for the requirement of the level 200 1st semester robotics project in Mechatronics Engineering.
 
 …………………………………………..
+
 Ayuba Muhammad
+
 Lecturer
 
 
@@ -46,12 +49,12 @@ I dedicate this project to LORD almighty for the strength and knowledge he gave 
 
 ## TABLE OF CONTENTS 
 
-Declaration
-Approval
-Acknowledgement
-Dedication
-List of Figures
-Abstract
++ Declaration
++ Approval
++ Acknowledgement
++ Dedication
++ List of Figures
++ Abstract
 
 ### CHAPTER ONE
 + Introduction
@@ -66,6 +69,7 @@ Abstract
 + Context Scope
 + Geographical Scope
 + Time Scope
+  
 ### CHAPTER TWO
 Introduction Ultrasonic Sensor
 + Components
@@ -98,24 +102,38 @@ Introduction Ultrasonic Sensor
 ## LIST OF FIGURES
 
 Fig 1: Ultrasonic Sensor Principle
+
 Fig 2: Principle of an ultrasonic sensor
+
 Fig 3: Schematic of the System
+
 Fig 4: Components of the System
+
 Fig 5: Arduino Uno R3 Board
+
 Fig 6: LCD 16x2
+
 Fig 7: LED (Yellow)
+
 Fig 8: DC Motor
+
 Fig 9: H-Bridge Motor Driver
+
 Fig 10: Ultrasonic Sensor
+
 Fig 11: Resistor
+
 Fig 12: Proteus Simulation of the System
+
 Fig 13: LCD Running Simulation
+
 Fig 14: Preview of the Code
 
 
 ## ABSTRACT
 
 In the current times, automated house hold appliances have become a popular choice for house hold cleaning agents such has a vacuum bot but there have been lots of report about robots accidentally hitting an obstacle thereby damaging the robot and causing the robot’s inability to complete its task. A common household would feel much at ease if the vacuum bots avoid every obstacle in its way and efficiently clean the house. Hence this project is a prototype of an obstacle avoiding system that can be implemented in house hold cleaning robots for minimal cost.
+
 Index-Terms: Arduino UNO R3, LED, motors, LCD 16x2, ultrasonic sensor, channel driver with diodes.
 
 
@@ -153,29 +171,38 @@ By addressing the limitations of current systems, this project aims to enhance t
 
 
 ## OBJECTIVES OF THE STUDY
+
 **Main Objectives**
+
 The main objective of this study is to design and develop an efficient obstacle avoidance system for vacuum cleaning robots.
 
 
 
 **Specific Objectives**
+
 1. To investigate the current limitations of obstacle avoidance systems in vacuum cleaning robots.
 2. To design and develop an obstacle avoidance system using ultrasonic sensors and Arduino UNO R3 microcontroller.
 3. To evaluate the performance and effectiveness of the proposed system.
 
 **Research Question**
+
 What is the effectiveness of an obstacle avoidance system using ultrasonic sensors and Arduino UNO R3 microcontroller in enhancing the navigation and cleaning efficiency of vacuum cleaning robots?
 
 
 ## SIGNIFICANCE OF THE STUDY
+
 This study is significant because it aims to address the current limitations of obstacle avoidance systems in vacuum cleaning robots. The proposed system has the potential to enhance the navigation and cleaning efficiency of vacuum cleaning robots, making them more reliable and effective in various environments. The findings of this study can contribute to the development of more advanced and efficient cleaning robots, ultimately improving the quality of life for individuals who rely on these robots for cleaning tasks.
+
 **CONTEXT SCOPE**
+
 The study focuses on the design and development of an efficient obstacle avoidance system for vacuum cleaning robots.
 
 **Geographical Scope**	
+
 The study is limited to any standard workshop setting, with the prototype being tested in a controlled environment within Nigeria.
 
 **Time Scope**
+
 The study is theoretical and based on simulation so it is expected to be completed within 1 week, while the physical aspect should be completed in the span of 6 weeks.
 
 
@@ -183,6 +210,7 @@ The study is theoretical and based on simulation so it is expected to be complet
 
 
 ## CHAPTER TWO (LITERATURE REVIEW)
+
 **INTRODUCTION**
 
 The development of efficient obstacle avoidance systems for vacuum cleaning robots has been an active area of research in recent years. With the increasing demand for autonomous cleaning solutions, researchers have explored various technologies and methods to enable robots to navigate and clean effectively in complex environments.
@@ -193,14 +221,17 @@ Despite these advancements, there is still a need for more efficient and reliabl
 
 
 ### ULTRASONIC SENSORS
+
 Ultrasonic sensors have emerged as a reliable and efficient solution for obstacle detection in vacuum cleaning robots. These sensors operate by emitting high-frequency sound waves and measuring the time-of-flight and intensity of the reflected signals. This information is then used to calculate the distance and orientation of obstacles in the environment.
 
 **Components**
+
 1. Trigger Component: This component sends out high-frequency ultrasonic sound waves (typically in the range of 40 kHz) into the environment.
 2. Echo Component: This component receives the reflected sound waves that bounce back from obstacles in the environment.
 Fig1: Ultrasonic Sensor
 
 **Principle of Ultrasonic Sensor**
+
 1. The trigger component sends out a high-frequency ultrasonic sound wave.
 2. The sound wave travels through the air and hits an obstacle.
 3. The obstacle reflects the sound wave back to the sensor.
@@ -210,13 +241,16 @@ Fig1: Ultrasonic Sensor
 
 By measuring the time-of-flight and intensity of the reflected sound waves, ultrasonic sensors can detect obstacles and calculate their distance, orientation, and size.
 Fig2: Principle of an ultrasonic sensor
+
 **Advantages**
+
 1. High accuracy: Ultrasonic sensors can detect obstacles with high accuracy, even in cluttered environments.
 2. Low cost: Compared to other sensing technologies, ultrasonic sensors are relatively inexpensive.
 3. Easy integration: Ultrasonic sensors are simple to integrate into robotic systems, making them a popular choice for obstacle detection.
 
 
 **Applications in Vacuum Cleaning Robots**
+
 1. Obstacle avoidance: Ultrasonic sensors can be used to detect and avoid obstacles, such as furniture, walls, and stairs.
 2. Navigation: By detecting the distance and orientation of obstacles, ultrasonic sensors can help vacuum cleaning robots navigate through complex environments.
 3. Mapping: Ultrasonic sensors can be used to create maps of the environment, allowing vacuum cleaning robots to optimize their cleaning routes.
@@ -224,12 +258,14 @@ Fig2: Principle of an ultrasonic sensor
 
 
 **Limitations**
+
 1. Range limitations: Ultrasonic sensors have limited range and may not detect obstacles at long distances.
 2. Interference: Ultrasonic sensors can be affected by interference from other sound sources, such as background noise.
 
 Overall, ultrasonic sensors offer a promising solution for obstacle detection in vacuum cleaning robots. Their high accuracy, low cost, and ease of integration make them an attractive choice for robotic navigation and obstacle avoidance systems.
 
 **RELATED WORK DONE**
+
 Ultrasonic sensors play a crucial role in enabling vacuum robots and other obstacle-avoiding robots to navigate safely through their environments. These sensors use high-frequency sound waves to detect and measure the distance of objects in their surroundings.
 The process begins with the transmission of high-frequency sound waves by the ultrasonic sensor. When these sound waves hit an object, they bounce back and return to the sensor, which detects the reflected sound waves and measures the time difference between when the sound waves were sent and when they were received.
 Using the speed of sound, the sensor calculates the distance of the object from the sensor. This information is then used by the robot to adjust its navigation accordingly, allowing it to avoid collisions and navigate safely.
@@ -238,6 +274,7 @@ Similarly, ultrasonic sensors are used in other obstacle-avoiding robots, such a
 
 
 ## CHAPTER THREE
+
 ### SYSTEM COMPONENTS
 
 The ultrasonic sensors detect obstacles and measure their distance from the robot. The microcontroller processes the sensor data and controls the robot's movements. The vacuum cleaning robot platform provides the base for the robot, while the motor drivers control the speed and direction of the wheels and motors. The wheels and motors enable the robot to move around and navigate through its environment. Together, these components work in harmony to enable the robot to avoid obstacles and clean efficiently.
@@ -246,6 +283,7 @@ FIG4: COMPONENTS OF THE SYSTEM
  
 
 **ARDUINO UNO R3**
+
 The Arduino Uno R3 is a microcontroller board based on the ATmega328P, a high-performance 8-bit AVR microcontroller. It features 14 digital input/output pins, 6 analogue inputs, a 16 MHz crystal oscillator, a USB connection, and a power jack. The Arduino Uno R3 is a popular choice for DIY electronics projects, robotics, and prototyping due to its ease of use, flexibility, and affordability.
 One of the key advantages of the Arduino Uno R3 is its simplicity, making it an ideal platform for beginners to learn programming and electronics. The board is also highly extensible, with a wide range of libraries and shields available for tasks such as wireless communication, motor control, and sensor integration.
 The Arduino Uno R3 plays a crucial role in the development of the obstacle avoidance system for the vacuum cleaning robot, as it serves as the brain of the system. The microcontroller board is responsible for processing the data from the ultrasonic sensors, which detect obstacles and measure their distance from the robot.
@@ -254,6 +292,7 @@ FIG5: ARDUINO UNO R3 BOARD
 
 
 **LCD 16x2**
+
 The LCD16x2 is a liquid crystal display module that provides a simple and effective way to display text and numerical data. It features a 16-character by 2-line display, making it ideal for displaying short messages, sensor readings, and other data. The LCD16x2 is a popular choice for DIY electronics projects, robotics, and prototyping due to its ease of use, low cost, and compatibility with a wide range of microcontrollers.
 
 One of the key advantages of the LCD16x2 is its simplicity, making it an ideal component for beginners to learn about display technology and user interface design. The module is also highly versatile, with a wide range of commands and functions available for customizing the display.
@@ -263,6 +302,7 @@ FIG6: LCD 16x2
  
 
 **LED (YELLOW)**
+
 The LED (Yellow) is a light-emitting diode that provides a visual indication of the system's status. It features a bright yellow colour and is a popular choice for DIY electronics projects, robotics, and prototyping due to its ease of use, low cost, and compatibility with a wide range of microcontrollers.
 
 One of the key advantages of the LED (Yellow) is its simplicity, making it an ideal component for beginners to learn about visual indicators and user interface design. The LED is also highly versatile, with a wide range of applications in electronics and robotics.
@@ -271,6 +311,7 @@ The LED (Yellow) plays a crucial role in the development of the obstacle avoidan
 FIG7: LED (YELLOW)
  
 **DC MOTOR**	
+
 The DC Motor is a type of electric motor that converts direct current (DC) electrical energy into mechanical energy. It is a popular choice for DIY electronics projects, robotics, and prototyping due to its ease of use, low cost, and compatibility with a wide range of microcontrollers.
 
 One of the key advantages of the DC Motor is its simplicity, making it an ideal component for beginners to learn about motor control and robotics. The DC Motor is also highly versatile, with a wide range of applications in electronics and robotics, including robotic arms, vehicles, and conveyor systems.
@@ -279,6 +320,7 @@ The DC Motor plays a crucial role in the development of the obstacle avoidance s
 FIG8: DC MOTOR
  
 **H-BRIDGE MOTOR DRIVER**
+
 The H Bridge Motor Driver is a type of electronic circuit that enables the control of DC motors in both forward and reverse directions. It is a popular choice for DIY electronics projects, robotics, and prototyping due to its ease of use, low cost, and compatibility with a wide range of microcontrollers.
 One of the key advantages of the H Bridge Motor Driver is its ability to control the speed and direction of DC motors, making it an ideal component for applications that require precise motor control. The H Bridge Motor Driver is also highly versatile, with a wide range of applications in electronics and robotics, including robotic arms, vehicles, and conveyor systems.
 
@@ -286,6 +328,7 @@ The H Bridge Motor Driver plays a crucial role in the development of the obstacl
 FIG9: H-BRIDGE MOTOR DRIVER
  
 **ULTRASONIC SENSOR**
+
 The Ultrasonic Sensor is a type of non-contact proximity sensor that uses high-frequency sound waves to detect and measure the distance of objects. It is a popular choice for DIY electronics projects, robotics, and prototyping due to its ease of use, low cost, and compatibility with a wide range of microcontrollers.
 
 One of the key advantages of the Ultrasonic Sensor is its ability to provide accurate and reliable distance measurements, making it an ideal component for applications that require obstacle detection and avoidance. The Ultrasonic Sensor is also highly versatile, with a wide range of applications in electronics and robotics, including robotic navigation, obstacle avoidance, and proximity detection.
@@ -294,13 +337,17 @@ The Ultrasonic Sensor plays a crucial role in the development of the obstacle av
 FIG10: ULTRASONIC SENSOR
  
 **RESISTOR**
+
 The Resistor is a fundamental electronic component that opposes the flow of electric current. It is a crucial component in a wide range of electronic circuits, including voltage dividers, filters, and amplifiers. The Resistor is available in various resistance values, ranging from a few ohms to several megohms, making it a versatile component for various applications.
+
 One of the key advantages of the Resistor is its ability to regulate voltage and current levels in electronic circuits. By carefully selecting the resistance value, designers can create circuits that operate within specific voltage and current ranges. The Resistor is also a low-cost component, making it an ideal choice for prototyping and production.
 In the context of the obstacle avoidance system for the vacuum cleaning robot, Resistors play a crucial role in voltage division, signal attenuation, and current limiting. They are used to divide the voltage levels from sensors, attenuate signal amplitudes, and limit current flows to prevent damage to sensitive components. The Resistor's flexibility and availability in various resistance values make it an essential component for electronic circuit design and development.
 FIG11: RESISTOR
  
 **DESIGN OF SYSTEM**
+
 This schematic represents a well-integrated system using an Arduino Uno microcontroller. The design focuses on combining sensor input, actuation, and output display, making it suitable for automation projects such as obstacle-avoidance robots, distance-based motor control systems, or smart vehicles. Below is a detailed description of the system design and its functionalities.
+
 **System Functionality**
 
 1.	Sensor-Driven Control:
@@ -324,6 +371,7 @@ This schematic represents a well-integrated system using an Arduino Uno microcon
 
 
 **Functionality of the Design**
+
 1.	Scalability: Additional sensors or modules can be integrated with the Arduino, enhancing the system's functionality.
 2.	Real-Time Feedback: The LCD provides real-time data, improving usability and debugging capabilities.
 3.	Interactivity: The potentiometer and LED make the system more intuitive for users.
@@ -331,6 +379,7 @@ This schematic represents a well-integrated system using an Arduino Uno microcon
 FIG12: PROTEUS SIMULATION OF THE SYSTEM
 
 **WORKING OF THE SYSTEM**
+
 When powered on, the Arduino Uno initializes all connected components, and the LCD displays a message on system status to indicate that the system is ready for operation. The LED will turn on to indicate functionality of the system.
 The ultrasonic sensor emits sound waves and measures the time taken for the echo to return after hitting an object, sending this distance data to the Arduino via its trigger and echo pins. The Arduino processes the signal to calculate the distance to the object using a predefined formula.
 The Arduino compares the measured distance against predefined thresholds programmed in the firmware. If the distance is safe, the motors are allowed to run. However, if an obstacle is detected, the Arduino sends a command to the motor driver to perform a turning functionality.
@@ -347,6 +396,7 @@ FIG13: LCD RUNNING SIMULATION
 ## CHAPTER FOUR
 
 ### SYSTEM CODE
+
 ```
 #include <LiquidCrystal.h>
 int trig = 1;
@@ -423,6 +473,7 @@ void loop() {
 FIG14: PREVIEW OF THE CODE
 
 ### Function of the code
+
 This code uses an ultrasonic sensor to detect obstacles and avoid them. The Trigger pin sends out a sound wave and the echo pin receive the echo of that sound; it then calculates the amount of time it took and use that to get the distance. When the distance is between the robot and the obstacle is high, it runs the “Forward()” function which was coded to make both motors rotate clock wise, but when the distance is low, the code runs the “Right()” function which was coded to make one motor rotate clock wise and the other one rotate anti clockwise cause the robot to move left or right, and avoid the obstacle.
 RESULT OF THE SYSTEM
 The result of the system is an intelligent obstacle avoidance robot that can navigate through its environment while avoiding collisions with obstacles. The robot uses an ultrasonic sensor to detect obstacles and measure their distance, and an Arduino microcontroller to process the sensor data and control the robot's movements.
@@ -437,6 +488,7 @@ Overall, the system demonstrates a successful implementation of an obstacle avoi
 ## CHAPTER FIVE
 
 **CONCLUSION**
+
 An obstacle avoidance robot is a type of robot that is designed to navigate through a cluttered environment without colliding with obstacles. These robots use sensors and algorithms to detect and avoid obstacles in their path.
 
 An obstacle avoidance robot operates by using sensors to detect obstacles in its environment. The sensors send data to a microcontroller or computer, which uses algorithms to interpret the data and determine the best course of action to avoid the obstacle. The robot then uses its motors and actuators to execute the avoidance manoeuvre.
@@ -448,10 +500,12 @@ The robot uses a microcontroller to interpret the data from the ultrasonic senso
 The robot uses a DC motor to move forward and avoid obstacles. The motor is controlled by the microcontroller, which sends signals to turn the motor off and on.
 
 ## RECOMMENDATION
+
 To enhance the obstacle avoidance robot, add an infrared sensor to complement the existing ultrasonic sensor. This multi-sensor approach will improve accuracy and reliability in detecting obstacles. Modify the code to integrate infrared data and adjust the obstacle detection algorithm accordingly, enabling the robot to navigate more effectively.
 
 
 ## REFERENCES	
+
 1. Borenstein, J. (1991). The Navlab: A Testbed for Research in Autonomous Navigation. Kluwer Academic Publishers.
 2. Brooks, R. A. (1986). A Robust Layered Control System for a Mobile Robot. IEEE Journal of Robotics and Automation, 2(1), 14-23.
 3. Dudek, G., & Jenkin, M. (2010). Computational Principles of Mobile Robotics. Cambridge University Press.
